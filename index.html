@@ -4,16 +4,20 @@
         <title>My Portofolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>I'm Jose Luis Izquierdo Hernandez</h1>
+            <h1>I am Jose Izquierdo</h1>
         </header>
-        <section>
+        <section id="about">
             <h2>About me</h2>
-            <p>I am an student in Code The Dream</p>
+            <p>I am an student in Code The Dream and Future Web Developer</p>
         </section>
-        <section>
+        <section id="experience">
             <h2>Experience</h2>
             <p>1 month in PSSI</p>
             <p>4 month in Walmart</p>
@@ -24,11 +28,26 @@
                 
             </ul>
         </section>
-        <section>
+        <section id="connect">
         <h2>Connect</h2>
-        <p><a href="mailto:joseluisizquierdoshernandez@gmail.com">Email Me</a></p>
-        <p><a href="https://www.linkedin.com/in/jose-luis-izquierdo-hernandez-938064245">MyLinkedIn</a></p>
+        <p>My email address is <a href="mailto:joseluisizquierdoshernandez@gmail.com">joseluisizquierdoshernandez@gmail.com</a></p>
+        <p>And this is <a href="https://www.linkedin.com/in/jose-luis-izquierdo-hernandez-938064245" target="_blank">My LinkedIn</a> Profile</p>
 </section>
+    <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label>Your Name:<input type="text" name="usersName" required></label><br>
+            <label>Email Address:<input type="email" name="usersEmail" required></label><br>
+            <label>Your Message:<textarea name="usersMessage" required></textarea></label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul>
+
+        </ul>
+    </section>
     <footer></footer>
     <script src="/js/index.js"></script>
     </body>
