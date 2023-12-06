@@ -9,7 +9,7 @@ const skillsList = skillsSection.querySelector('ul');
 
 
 
-copyright.innerHTML = `Jose Izquierdo ${thisYear}`;
+copyright.innerHTML = `©Jose Izquierdo ${thisYear}`;
 footer.appendChild(copyright);
 
 for(let i = 0; i < skills.length; i++){
@@ -44,3 +44,5 @@ messageForm.addEventListener('submit', (e) => {
     messageList.appendChild(newMessage);
     messageForm.reset();
 })
+
+

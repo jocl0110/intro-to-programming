@@ -1,0 +1,111 @@
+html{
+    font-size: 100%;
+}
+/* First Section */
+body{
+    margin: 0 auto;
+    background-color: rgb(48, 56, 65);
+    color: white;  
+    font-family: 'Asap Condensed', sans-serif;
+}
+header{
+    margin: 1.5rem 2rem;
+    color: rgb(44, 157, 50);
+}
+h1{
+    font-size: 6rem;
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    margin: 5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+#about h2{
+    margin-top: 4rem;
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+/* Second Section */
+#experience{
+    border: 5px solid rgb(44, 157, 50);
+    border-radius: 5px;
+}
+/* Third Section */
+#skills ul{
+    border: 5px solid rgb(44, 157, 50);
+    border-radius: 10px;
+}
+ul li{
+    font-size: 1.5rem;
+    list-style: none;
+    display: inline-block;
+    padding: 0 3.5rem;
+}
+/*Form Section*/
+form{
+    width: 100%;
+    margin: 0 auto;
+}
+label{
+    font-size: 2.5rem;
+    margin-left: 8rem;
+    margin-bottom: 4rem;
+}
+input, textarea{
+    display: block;
+    width: 50rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-left: 22rem;
+    font-size: 2.5rem;
+}
+textarea{
+    height: 8rem;
+}
+button {
+    display: block;
+    width: 20%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgb(44, 157, 50);
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  min-width: 300px;
+}
+/* Messages */
+#messages ul li{
+    border: 2.5px solid rgb(44, 157, 50);
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+/* footer */
+footer{
+    background-color: rgb(25, 25, 25);
+    margin-top: 4rem;
+    height: 5rem;
+}
+footer p{
+    text-align: justify;
+    margin-top: 2rem;
+}
+/* Links */
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: tomato;
+}
+a:hover{
+    color: rgb(44, 157, 50);
+    text-decoration: underline;
+}
