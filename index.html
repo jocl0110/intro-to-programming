@@ -11,14 +11,41 @@
     </head>
     <body>
         <header>
-            <h1>I am Jose Izquierdo</h1>
+            <nav id="nav-bar">
+                <ul id="nav-list">
+                    <li>
+                        <a href="#who-section"><i id="icon" class="fas fa-code"></i></a>
+                    </li>
+                    <li>
+                        <a href="#about" class="sections">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="sections">Education</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="sections">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#connect" class="sections">Connect</a>
+                    </li>
+                    <li>
+                        <a href="#form-section" class="sections">Leave a Message</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
+        <main>
+        <section id="who-section">
+            <h1>I'm Jose Izquierdo</h1>
+            <p>I'm an student in Code The Dream and Future Web Developer</p>
+        </section>
         <section id="about">
             <h2>About me</h2>
-            <p>I am an student in Code The Dream and Future Web Developer</p>
+            <p>I consider myself an active person and always open to new possibilities. My premises are effort and perseverance. Always available to apply my knowledge in the sector and continue my professional development
+            </p>
         </section>
-        <section id="experience">
-            <h2>Experience</h2>
+        <section id="education">
+            <h2>Education</h2>
             <p>1 month in PSSI</p>
             <p>4 month in Walmart</p>
         </section>
@@ -30,10 +57,10 @@
         </section>
         <section id="connect">
         <h2>Connect</h2>
-        <p>My email address is <a href="mailto:joseluisizquierdoshernandez@gmail.com">joseluisizquierdoshernandez@gmail.com</a></p>
+        <p>Here is my<a href="mailto:joseluisizquierdoshernandez@gmail.com"> email address</a></p>
         <p>And this is <a href="https://www.linkedin.com/in/jose-luis-izquierdo-hernandez-938064245" target="_blank">My LinkedIn</a> Profile</p>
 </section>
-    <section>
+    <section id="form-section">
         <h2>Leave a Message</h2>
         <form name="leave_message">
             <label>Your Name:<input type="text" name="usersName" required></label><br>
@@ -48,8 +75,10 @@
 
         </ul>
     </section>
+    </main>
     <footer></footer>
     <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/1b2e7cec6d.js" crossorigin="anonymous"></script>
     </body>
 </html>
 
