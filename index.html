@@ -9,35 +9,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <header>
-            <nav id="nav-bar">
-                <ul id="nav-list">
-                    <li>
-                        <a href="#who-section"><i id="icon" class="fas fa-code"></i></a>
-                    </li>
-                    <li>
-                        <a href="#about" class="sections">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#education" class="sections">Education</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="sections">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#connect" class="sections">Connect</a>
-                    </li>
-                    <li>
-                        <a href="#form-section" class="sections">Leave a Message</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <body> 
+        <nav id="navbar">
+            <ul id="nav-list">
+            <li><a href="#who-section"><i id="icon" class="fas fa-code"></i>
+            <li><a href="#education" class="sections">Education</a></li>
+            <li><a href="#skills" class="sections">Skills</a></li>
+            <li><a href="#form-section" class="sections">Leave a Message</a></li>
+        </ul>
+        </nav>
         <main>
         <section id="who-section">
             <h1>I'm Jose Izquierdo</h1>
-            <p>I'm an student in Code The Dream and Future Web Developer</p>
+            <p><i>a student in Code The Dream and Future Web Developer</i></p>
         </section>
         <section id="about">
             <h2>About me</h2>
@@ -46,20 +30,21 @@
         </section>
         <section id="education">
             <h2>Education</h2>
-            <p>1 month in PSSI</p>
-            <p>4 month in Walmart</p>
+            <div class="grid-container">
+                <p class="status">Graduated 05/2019</p>
+                <p class="got">High School, IPVCE Friedrich Engels - Pinar del Rio, Cuba</p>
+                <p class="status">Finished 03/2022(Not Graduated)</p>
+                <p class="got">Bachelor's Degree in Computer Science, UCI - Havana, Cuba</p>             
+                <p class="status">Finished 05/2023</p>
+                <p class="got">Responsive Web Design Developer Certification, <a id="freeCodeCamp" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
+            </div>
         </section>
         <section id="skills">
             <h2>Skills</h2>
             <ul>
                 
             </ul>
-        </section>
-        <section id="connect">
-        <h2>Connect</h2>
-        <p>Here is my<a href="mailto:joseluisizquierdoshernandez@gmail.com"> email address</a></p>
-        <p>And this is <a href="https://www.linkedin.com/in/jose-luis-izquierdo-hernandez-938064245" target="_blank">My LinkedIn</a> Profile</p>
-</section>
+        </section>        
     <section id="form-section">
         <h2>Leave a Message</h2>
         <form name="leave_message">
@@ -76,7 +61,14 @@
         </ul>
     </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="social">
+            <a href="mailto:joseluisizquierdoshernandez@gmail.com"><i class="fa-solid fa-at"></i></a>
+            <a href="https://twitter.com/jocl0110" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jose-luis-izquierdo-hernandez-938064245/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/jocl0110" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
     <script src="/js/index.js"></script>
     <script src="https://kit.fontawesome.com/1b2e7cec6d.js" crossorigin="anonymous"></script>
     </body>
