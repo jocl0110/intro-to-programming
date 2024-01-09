@@ -158,6 +158,20 @@ form button{
     width: 8rem;
     height: 2rem;
 }
+/* Projects */
+#projects{
+    margin: 0 2vw 0rem 2vw;
+}
+#projects ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+#projects ul li{
+    font-size: 1.5rem;
+}
+
 /* Messages */
 #messages{
     font-size: 1.5rem;
