@@ -56,3 +56,23 @@ messageForm.addEventListener('submit', (e) => {
 })
 
 
+
+// AJAX
+
+var githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/jocl0110/repos');
+githubRequest.send();
+githubRequest.addEventListener('load', (e) => {
+    var repositories = JSON.parse(this.githubRequest.responseText);
+    console.log(repositories);
+    
+    const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul');
+for(let i = 0; i < repositories.length; i++){
+    const project = document.createElement('li');
+    project.innerHTML = repositories[i].name;
+    projectList.appendChild(project);
+}
+})
+
+
