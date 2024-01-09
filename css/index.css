@@ -1,175 +1,245 @@
+*{
+    box-sizing: border-box;
+}
 html{
     font-size: 100%;
 }
-
 body{
-    margin: 0 auto;
+    margin: 0;
     background-color: rgb(48, 56, 65);
-    color: white;  
+    color: ghostwhite;
     font-family: 'Asap Condensed', sans-serif;
 }
-main{  
-    margin: 10rem 2rem 0;
-}
+
 /* Nav Bar */
-header{
-    width: 100%;
+nav{
+    position: fixed;
     top: 0;
-    margin: 0 0 2rem; 
-}
-#nav-bar{
-    display: inline-block;
     width: 100%;
-    background-color: rgba(, 30, 30, 0.1);
-    border-bottom: 2px solid rgb(44, 157, 50);
+    margin-top: 0;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid greenyellow;
 }
 #nav-list li{
     display: inline-block;
-    list-style: none;
-    font-size: large;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    text-align: center;
 }
 #nav-list li a{
-    font-size: 2rem;
-}
-.sections{
-    padding-left: 20px;
-    font-size: 1.5rem;
-    position: relative;
-    left: 30rem;
-}
-#icon{
-    padding-bottom: 50px;
-    height: 100%;
-    font-size: 2rem;
-}
-/* First Section */
-section{
-    margin-top: 10rem;
-}
-h1, header p{
-    font-size: 6rem;
-    text-align: center;
-    font-weight: bold;
-    color: rgb(44, 157, 50);
-}
-h2{
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: bold;
-}
-#about h2{
-    margin-top: 4rem;
-}
-p{
-    font-size: 1.5rem;
-    text-align: center;
-    font-style: italic;
-}
-/* Second Section */
-#experience{
-    border: 5px solid rgb(44, 157, 50);
-    border-radius: 5px;
-}
-/* Third Section */
-#skills ul li{
-    padding: 1rem 2rem;
-    margin: 0.5rem 1rem;
-    font-size: 1.5rem;
-    list-style: none;
-    display: inline-block;
-    border: 5px solid rgb(44, 157, 50);
-    border-radius: 10px;
-}
-/*Form Section*/
-form{
-    width: 100%;
-    margin: 0 auto;
-}
-label{
-    font-size: 2.5rem;
-    margin-left: 8rem;
-    margin-bottom: 4rem;
-}
-input, textarea{
     display: block;
-    width: 50rem;
-    height: 4rem;
-    margin-top: 2rem;
-    margin-left: 22rem;
-    font-size: 2.5rem;
-}
-textarea{
-    height: 8rem;
-}
-button {
-    display: block;
-    width: 20%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: rgb(44, 157, 50);
-  color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
-  border-radius: 10px;
-  min-width: 300px;
-}
-/* Messages */
-#messages ul li{
-    border: 2.5px solid rgb(44, 157, 50);
-    border-radius: 10px;
-    font-size: 2rem;
+    float: left;
+    padding: 10px 10px;
     text-align: center;
-    margin: 1rem;
-}
-/* footer */
-footer{
-    background-color: rgb(25, 25, 25);
-    margin-top: 4rem;
-    height: 5rem;
-}
-footer p{
-    text-align: justify;
-    margin-top: 2rem;
-}
-/* Links */
-a{
-    color: #87ceeb;
+    margin-top: 1rem;
     text-decoration: none;
 }
-a:visited{
-    color: tomato;
+nav ul{
+    margin: 0;
+    list-style: none;
 }
-a:hover{
+ul li a{
     color: rgb(44, 157, 50);
+}
+    
+
+ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+}
+/* Main */
+h1, h2{
+    padding-top: 5rem;
+}
+/* First Section */
+h1{
+    margin-bottom: 0;
+    font-size: 4rem;
+    color: greenyellow;
+    text-align: center;
+}
+#who-section p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* Second Section */
+#about, #education, #connect, #form-section{
+    margin: 4rem 5rem 2rem;
+
+}
+section h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+#about p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+/* Third Section */
+#education{
+    width: 80vw;
+    margin: auto;
+    background-color: rgba(173, 255, 47, 0.5);
+    border-radius: 10px;
+}
+.grid-container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1fr;
+    align-items: center;
+    text-align: center;
+}
+#education p{
+    font-size: 1.5rem;
+}
+#freeCodeCamp{
+    color: purple;
+    text-decoration: none;
+}
+#freeCodeCamp:hover{
+    color: black;
     text-decoration: underline;
 }
-@media screen and (min-width: 200px) and (max-width: 740px) {
-    h1{
-        font-size: 2.5rem;
-    }
-    h2{
-        font-size: 2rem;
-    }
-    .sections{
-        display: none;
-    }
-    #skills ul li{
-        font-size: 1rem;
-        padding: 0.5rem;
-        margin: 0.5rem;
-    }
-   
+#freeCodeCamp:visited{
+    color: midnightblue
 }
-/* Form querie */
-@media screen and (min-width: 375px) and (max-width: 900px){
-    label{
-        font-size: 1rem;
-        margin-left: 1rem;
+/* Fourth Section */
+
+#skills ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#skills ul{
+    list-style: none;
+}
+#skills ul li{
+    border: 2px solid rgb(44, 157, 50);
+    border-radius: 10px;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+}
+/* Fifth Section */
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+label{
+    font-size: 1.2rem;
+}
+input, textarea{
+    height: 5vh;
+    width: 25vw;
+    font-size: 1.2rem;
+}
+textarea{
+    margin-left: 2.2rem;
+}
+input[type="text"]{
+    margin-left: 3.8rem;
+}
+input[type='email']{
+    margin-left: 2.1rem;
+}
+form button{
+    align-self: flex-start;
+    border: 1px solid rgb(48, 56, 65);
+    border-radius: 5px;
+    background-color: rgb(44, 157, 50);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 8rem;
+    height: 2rem;
+}
+/* Messages */
+#messages{
+    font-size: 1.5rem;
+}
+#messages ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+#message ul li a{
+    color: orangered;
+}
+#messages ul li{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1rem 1rem;
+    padding: 0.5rem;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+}
+#removeButton, #editButton{
+    background-color: black;
+    color: ghostwhite;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 1rem 0.2rem 1rem 0.2rem;
+    
+}
+#editTextarea{
+    width: 10vw;
+    height: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: ghostwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 4px solid greenyellow;
+}
+footer p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+footer i{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 10px;
+}
+footer a{
+    color: ghostwhite;
+}
+#copyright{
+    order: -1;
+}
+.social{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 640px) {
+    #nav-list li{
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
     }
-    input, textarea{
-        font-size: 16px;
-        width: 100%;
-        height: 30px;
-        margin: auto;
+    #nav-list{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 395px) {
+    #nav-list li{
+        font-size: 1rem;
     }
 }
