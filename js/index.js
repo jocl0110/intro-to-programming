@@ -59,10 +59,6 @@ messageForm.addEventListener('submit', (e) => {
 
 // Fetch API
 
-
-
-
-
 fetch('https://api.github.com/users/jocl0110/repos')
 .then(response => response.json())
 .then(data => generateProjects(data))
@@ -74,7 +70,9 @@ function generateProjects(data){
     const projectList = projectSection.querySelector('ul');
     for(let i = 0; i < data.length; i++){
     const project = document.createElement('li');
-    project.innerHTML = data[i].name;
+    project.innerHTML = `
+        <a href='https://github.com/jocl0110?tab=repositories' target='_blank'>${data[i].name}</a>
+    `
     projectList.appendChild(project);
     }
 }
