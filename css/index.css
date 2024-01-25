@@ -143,10 +143,10 @@ textarea{
     margin-left: 2.2rem;
 }
 input[type="text"]{
-    margin-left: 3.8rem;
+    margin-left: 4rem;
 }
 input[type='email']{
-    margin-left: 2.1rem;
+    margin-left: 2.2rem;
 }
 form button{
     align-self: flex-start;
@@ -170,6 +170,7 @@ form button{
 }
 #projects ul li{
     font-size: 1.5rem;
+    padding: 3rem;
 }
 
 /* Messages */
@@ -255,5 +256,10 @@ footer a{
 @media screen and (max-width: 395px) {
     #nav-list li{
         font-size: 1rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    input[type='text']{
+        margin-left: 2.2rem;
     }
 }
