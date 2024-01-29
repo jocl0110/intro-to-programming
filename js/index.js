@@ -71,7 +71,7 @@ function generateProjects(data){
     for(let i = 0; i < data.length; i++){
     const project = document.createElement('li');
     project.innerHTML = `
-        <a href='https://github.com/jocl0110?tab=repositories' target='_blank'>${data[i].name}</a>
+        <a href='${data[i].html_url}' target='_blank'>${data[i].name}</a>
     `
     projectList.appendChild(project);
     }
